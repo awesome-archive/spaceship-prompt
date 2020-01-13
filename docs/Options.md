@@ -398,12 +398,20 @@ The environment variable `COMPOSE_PATH_SEPARATOR` is supported too. For more inf
 
 | Variable | Default | Meaning |
 | :------- | :-----: | ------- |
-| `SPACESHIP_DOCKER_SHOW` | `true` | Show current Docker version and connected docker-machine or not |
+| `SPACESHIP_DOCKER_SHOW` | `true` | Show current Docker version or not |
 | `SPACESHIP_DOCKER_PREFIX` | `on ` | Prefix before the Docker section |
 | `SPACESHIP_DOCKER_SUFFIX` | `$SPACESHIP_PROMPT_DEFAULT_SUFFIX` | Suffix after the Docker section |
 | `SPACESHIP_DOCKER_SYMBOL` | `🐳·` | Character to be shown before Docker version |
 | `SPACESHIP_DOCKER_COLOR` | `cyan` | Color of Docker section |
 | `SPACESHIP_DOCKER_VERBOSE` | `false` | Show complete Docker version |
+
+### Docker context (`docker_context`)
+
+| Variable | Default | Meaning |
+| :------- | :-----: | ------- |
+| `SPACESHIP_DOCKER_CONTEXT_SHOW` | `true` | Show current Docker context or not |
+| `SPACESHIP_DOCKER_CONTEXT_PREFIX` | `(` | Prefix before the Docker context section |
+| `SPACESHIP_DOCKER_CONTEXT_SUFFIX` | `)` | Suffix after the Docker context section |
 
 ### Amazon Web Services (AWS) (`aws`)
 
@@ -542,7 +550,7 @@ By default, Battery section is shown only if battery level is below `SPACESHIP_B
 | :------- | :-----: | ------- |
 | `SPACESHIP_BATTERY_SHOW` | `true` | Show battery section or not (`true`, `false`, `always` or `charged`) |
 | `SPACESHIP_BATTERY_PREFIX` | ` ` | Prefix before battery section |
-| `SPACESHIP_BATTERY_SUFFIX` | `SPACESHIP_PROMPT_DEFAULT_SUFFIX` | Suffix after battery section |
+| `SPACESHIP_BATTERY_SUFFIX` | `$SPACESHIP_PROMPT_DEFAULT_SUFFIX` | Suffix after battery section |
 | `SPACESHIP_BATTERY_SYMBOL_CHARGING` | `⇡` | Character to be shown if battery is charging |
 | `SPACESHIP_BATTERY_SYMBOL_DISCHARGING` | `⇣` | Character to be shown if battery is discharging |
 | `SPACESHIP_BATTERY_SYMBOL_FULL` | `•` | Character to be shown if battery is full |
